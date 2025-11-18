@@ -1,0 +1,517 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+    background-color: #FAFAF7;
+}
+
+nav{
+    text-align: end;
+    padding: 1rem 3rem;
+}
+
+nav a {
+    padding: .75rem;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    transition: transform .2s ease;
+    font-size: 20px;
+}
+
+nav a:hover{
+    transform: scale(1.1);
+    transition: transform .2s ease;
+    color: #BC1028  ;
+}
+
+header .textos-header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    width: 100%;
+}
+
+.textos-header h1{
+    font-size: 40px;
+    color: aliceblue;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: aliceblue;
+}
+
+.torneos{
+    padding: 60px 0;
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
+    background-color: #FAFAF7;
+}
+
+.titulo{
+    color: #BC1028;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 45px;
+    background-color: #FAFAF7;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: #BC1028;
+    background: url(https://images4.alphacoders.com/134/thumb-1920-1340828.png);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.wave{
+    position: absolute;
+    width: 100%;
+    bottom: -5px;
+}
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+    background-color: #FAFAF7;
+}
+
+.logo-nuestra-hist{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+.torneos-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #FAFAF7;
+}
+
+.imagen-sobre-nosotros{
+    width: 40%;
+    height: 90vh;
+}
+
+.sobre-nosotros .contenidos-textos{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenidos-textos{
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.contenidos-textos h3{
+    margin-bottom: 0px;
+}
+
+.contenidos-textos p{
+    padding: 0 0 30px 15px;
+    font-weight: 300px;
+    text-align: justify;
+}
+.jugadoresystaff{
+    background: #FAFAF7;
+}
+
+.galeria-jugadores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.imagen-jugadores{
+    width: 19%;
+    height: 380px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0px 6px rgba(0,0,0,.5);
+}
+.imagen-jugadores > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: hsla(0, 0%, 0%, 0.73);
+    transform: scale(0);
+    transition: transform .5s;
+    display: flex;
+    justify-content: space-center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.hover-galeria img{
+    width: 200px;
+}
+.hover-galeria p{
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.imagen-jugadores:hover .hover-galeria{
+    transform: scale(1);
+}
+
+.hover-galeria-white{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: hsla(0, 0%, 100%, 0.73);
+    transform: scale(0);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria-white img{
+    width: 200px;
+}
+.hover-galeria-white p{
+    color: black;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.imagen-jugadores:hover .hover-galeria-white{
+    transform: scale(1);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cards .card{
+    background: rgb(0, 0, 0);
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 30px;
+    flex: 0 0 calc(50% - 20px);
+    border: 5px solid #B3AE88;
+    transition: all 0.3s ease; 
+}
+
+.cards .card:hover{
+    transform: scale(1.02);
+    border-color: #FFD700;
+    background: rgb(100, 7, 7); 
+}
+
+.cards .card img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #BC1028;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: white;
+}
+.cards .card > .contenido-texto-card h4{
+    width: 60%;
+    color: yellow;
+    font-size: 22px;
+}
+
+
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+.logros-equipo{
+    background: #FAFAF7;
+    padding-bottom: 0px;
+    height: 200%;
+
+}
+
+.equipo{
+    padding-bottom: 0px;
+}
+
+
+.logrado{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tipos-logros{
+    width: 28%;
+    text-align: center;
+    box-shadow: 0 0px 15px rgba(252, 0, 0, 0.5); 
+    border-radius: 1rem;
+    padding-bottom: 10;
+    background-color: #F7F7F7;
+}
+
+.tipos-logros:hover{
+    transform: scale(1.05);
+    transition: transform .2s ease;
+    box-shadow: 0 0px 30px #FFD700;
+}
+
+.tipos-logros img{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+
+.tipos-logros h3{
+    margin: 10px 0;
+    color: black;
+}
+
+.tipos-logros p{
+    font-weight: 300;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    color: #333333;
+}
+
+footer{
+    background: rgba(0, 0, 0, 0.947);
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+    border-top: 5px solid #BC1028;
+}
+
+.contacto{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.content-foo{
+    text-align: center;
+}
+.content-foo h4{
+    color: #BC1028;
+    border-bottom: 3px solid #BC1028;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo a{
+    text-decoration: none;
+    color: white;
+    transition: transform .2s ease;
+    display: inline-block;
+}
+
+.content-foo a:hover{
+    color: #BC1028;
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: pink;
+    border-top: 5px solid #BC1028;
+    padding-top: 25px;
+}
+
+
+@media screen and (max-width: 900px){
+    nav{
+        text-align: center;
+        padding: 1rem 1rem;
+    }
+    nav a {
+        font-size: 16px;
+        padding: .5rem;
+    }
+    
+    .textos-header h1{
+        font-size: 32px;
+    }
+
+    .textos-header h2{
+        font-size: 24px;
+    }
+
+    .torneos-sobre-nosotros{
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .imagen-sobre-nosotros{
+        width: 80%; 
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .contenidos-textos{
+        margin-left: 0;
+        width: 90%;
+    }
+    
+    .imagen-jugadores{
+        width: 30%; 
+        height: 250px;
+    }
+    
+    .cards .card{
+        flex-direction: column; 
+        width: 90%; 
+        height: auto; 
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .cards .card img{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    
+    .cards .card > .contenido-texto-card{
+        width: 100%;
+    }
+    
+    .cards .card > .contenido-texto-card h4{
+        width: 100%; 
+        font-size: 18px;
+    }
+    
+    .logrado{
+        flex-direction: column; 
+    }
+    
+    .tipos-logros{
+        width: 80%; 
+        margin-bottom: 30px;
+    }
+    
+    .contacto{
+        flex-wrap: wrap; 
+        justify-content: space-around;
+    }
+    
+    .content-foo{
+        width: 45%; 
+        margin-bottom: 20px;
+    }
+    .titulo-final{
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    
+    .titulo{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    nav{
+        padding: 1rem 0.5rem;
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav a {
+        font-size: 14px;
+        padding: .25rem;
+    }
+    .textos-header h1{
+        font-size: 24px;
+    }
+    .textos-header h2{
+        font-size: 18px;
+    }
+    
+    .imagen-sobre-nosotros{
+        width: 100%;
+        height: auto;
+    }
+    .contenidos-textos{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .contenidos-textos p{
+        padding-left: 5px;
+    }
+    
+    .imagen-jugadores{
+        width: 48%; 
+        height: 200px;
+    }
+    .hover-galeria img, .hover-galeria-white img{
+        width: 100px;
+    }
+    .hover-galeria p, .hover-galeria-white p{
+        font-size: 20px;
+    }
+    
+    .cards .card{
+        width: 95%; 
+    }
+    
+    .tipos-logros{
+        width: 95%;
+    }
+    
+    .contacto{
+        flex-direction: column; 
+        align-items: center;
+    }
+    .content-foo{
+        width: 95%;
+        margin-bottom: 30px;
+    }
+    .content-foo h4{
+        font-size: 18px;
+    }
+    .titulo-final{
+        font-size: 14px;
+    }
+}
