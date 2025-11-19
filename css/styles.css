@@ -73,6 +73,7 @@ header{
     background: url(https://images4.alphacoders.com/134/thumb-1920-1340828.png);
     background-size: cover;
     background-attachment: scroll;
+    background-position: center; /* Añadido para mejor centrado */
     position: relative;
 }
 
@@ -356,162 +357,151 @@ footer{
     border-top: 5px solid #BC1028;
     padding-top: 25px;
 }
-
-
-@media screen and (max-width: 900px){
-    nav{
-        text-align: center;
-        padding: 1rem 1rem;
+@media (max-width: 768px) {
+    
+    /* Ajuste en el Padding de la Navegación */
+    nav {
+        padding: 1rem 1rem; /* Reducir padding horizontal */
+        text-align: center; /* Centrar links */
     }
+
     nav a {
-        font-size: 16px;
+        font-size: 16px; /* Reducir tamaño de fuente de links */
         padding: .5rem;
     }
-    
-    .textos-header h1{
-        font-size: 32px;
+
+    header{
+        width: 20xp;
+        background-attachment: fixed;
     }
 
-    .textos-header h2{
-        font-size: 24px;
+    /* Ajuste en el Título Principal */
+    .textos-header h1 {
+        font-size: 28px;
     }
 
-    .torneos-sobre-nosotros{
-        flex-direction: column; 
-        align-items: center;
-    }
-    
-    .imagen-sobre-nosotros{
-        width: 80%; 
-        height: auto;
-        margin-bottom: 30px;
-    }
-
-    .contenidos-textos{
-        margin-left: 0;
-        width: 90%;
-    }
-    
-    .imagen-jugadores{
-        width: 30%; 
-        height: 250px;
-    }
-    
-    .cards .card{
-        flex-direction: row;       /* horizontal */
-        width: 100%;
-        height: auto;
-        padding: 15px;
-    }
-
-    .cards .card img{
-        width: 90px;
-        height: 90px;
-    }
-
-    .cards .card .contenido-texto-card{
-        width: 70%;
-    }
-
-    .cards .card .contenido-texto-card h4{
-        font-size: 16px;
-    }
-
-    .cards .card .contenido-texto-card p{
-        font-size: 14px;
-    }
-    
-    .logrado{
-        flex-direction: column; 
-    }
-    
-    .tipos-logros{
-        width: 80%; 
-        margin-bottom: 30px;
-    }
-    
-    .contacto{
-        flex-wrap: wrap; 
-        justify-content: space-around;
-    }
-    
-    .content-foo{
-        width: 45%; 
-        margin-bottom: 20px;
-    }
-    .titulo-final{
-        font-size: 18px;
-    }
-}
-
-
-@media screen and (max-width: 500px){
-    
-    .titulo{
-        font-size: 30px;
-        margin-bottom: 30px;
-    }
-
-    nav{
-        padding: 1rem 0.5rem;
-        display: flex; 
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    nav a {
-        font-size: 14px;
-        padding: .25rem;
-    }
-    .textos-header h1{
-        font-size: 24px;
-    }
-    .textos-header h2{
-        font-size: 18px;
-    }
-    
-    .imagen-sobre-nosotros{
-        width: 100%;
-        height: auto;
-    }
-    .contenidos-textos{
-        width: 100%;
-        padding: 0 10px;
-    }
-    .contenidos-textos p{
-        padding-left: 5px;
-    }
-    
-    .imagen-jugadores{
-        width: 48%; 
-        height: 200px;
-    }
-    .hover-galeria img, .hover-galeria-white img{
-        width: 100px;
-    }
-    .hover-galeria p, .hover-galeria-white p{
+    .textos-header h2 {
         font-size: 20px;
     }
-    
-    .cards .card{
-        width: 95%; 
+
+    /* Ajuste en la sección principal del cuerpo */
+    .torneos {
+        width: 90%; /* Ajustar el ancho máximo del contenedor */
     }
-    
-    .tipos-logros{
-        width: 95%;
-    }
-    
-    .contacto{
-        flex-direction: column; 
-        align-items: center;
-    }
-    .content-foo{
-        width: 95%;
+
+    .titulo {
+        font-size: 32px;
         margin-bottom: 30px;
     }
-    .content-foo h4{
-        font-size: 18px;
+
+    /* --- 2. Adaptación de la Sección 'Nuestra Historia' --- */
+    .torneos-sobre-nosotros {
+        flex-direction: column; /* Apilar la imagen y el texto */
+        align-items: center; /* Centrar elementos */
     }
-    .titulo-final{
-        font-size: 14px;
+
+    .imagen-sobre-nosotros {
+        width: 90%; /* La imagen ocupa más ancho */
+        height: auto; /* Altura automática para mantener la proporción */
+        margin-bottom: 20px;
+    }
+    
+    .contenidos-textos {
+        width: 90%; /* El texto ocupa más ancho */
+        margin-left: 0;
+    }
+    
+    .contenidos-textos p {
+        padding: 0; /* Eliminar padding extra */
+        text-align: left; /* Volver a alineación izquierda para el móvil */
+    }
+
+    /* --- 3. Adaptación de la Sección 'Jugadores y Staff' --- */
+    .galeria-jugadores {
+        justify-content: center; /* Centrar las imágenes */
+    }
+    
+    .imagen-jugadores {
+        width: 48%; /* Dos imágenes por fila para una mejor visualización */
+        height: 250px;
+        margin-bottom: 10px;
+    }
+    
+    .hover-galeria p,
+    .hover-galeria-white p {
+        font-size: 20px; /* Reducir el texto del hover */
+    }
+    
+    .hover-galeria img,
+    .hover-galeria-white img {
+        width: 100px;
+    }
+    
+    /* --- 4. Cumplir con el Requerimiento de 'ROL DE CADA UNO' (Una columna) --- */
+    .cards {
+        flex-direction: column; /* Forzar el apilamiento de las tarjetas */
+        gap: 15px;
+    }
+
+    .cards .card {
+        width: 100%; /* Ocupar todo el ancho disponible */
+        flex: 0 0 100%; /* Asegurar que ocupe todo el ancho */
+        height: auto; /* Permitir que la altura se ajuste al contenido */
+        flex-direction: column; /* Apilar imagen y texto dentro de la tarjeta */
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    .cards .card img {
+        width: 100px; /* Reducir tamaño de la imagen del jugador */
+        height: 100px;
+        margin-bottom: 15px;
+    }
+
+    .cards .card > .contenido-texto-card {
+        width: 90%; /* Ajustar ancho del texto */
+        text-align: center;
+    }
+    
+    .cards .card > .contenido-texto-card h4 {
+        width: 100%; /* Ajustar ancho del título */
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .cards .card > .contenido-texto-card p {
+        padding: 0;
+    }
+
+    /* --- 5. Adaptación de la Sección 'Logros del Equipo' --- */
+    .logrado {
+        flex-direction: column; /* Apilar los logros */
+    }
+
+    .tipos-logros {
+        width: 90%; /* Ocupar más ancho en móvil */
+        margin-bottom: 30px; /* Separación entre logros */
+    }
+    
+    /* --- 6. Adaptación del Footer --- */
+    footer {
+        padding: 30px 0 15px 0;
+    }
+    
+    .contacto {
+        flex-direction: column; /* Apilar los elementos de contacto */
+        width: 95%;
+    }
+
+    .content-foo {
+        margin-bottom: 20px;
+    }
+    
+    .content-foo h4 {
+        margin-bottom: 5px;
+    }
+    
+    .titulo-final {
+        font-size: 18px;
     }
 }
