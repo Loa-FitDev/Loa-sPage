@@ -73,7 +73,7 @@ header{
     background: url(https://images4.alphacoders.com/134/thumb-1920-1340828.png);
     background-size: cover;
     background-attachment: fixed;
-    background-position: center; /* Añadido para mejor centrado */
+    background-position: center; 
     position: relative;
 }
 
@@ -358,15 +358,13 @@ footer{
     padding-top: 25px;
 }
 @media (max-width: 768px) {
-    
-    /* Ajuste en el Padding de la Navegación */
     nav {
-        padding: 1rem 1rem; /* Reducir padding horizontal */
-        text-align: center; /* Centrar links */
+        padding: 1rem 1rem; 
+        text-align: center; 
     }
 
     nav a {
-        font-size: 16px; /* Reducir tamaño de fuente de links */
+        font-size: 16px; 
         padding: .5rem;
     }
 
@@ -375,7 +373,6 @@ footer{
         background-attachment: fixed;
     }
 
-    /* Ajuste en el Título Principal */
     .textos-header h1 {
         font-size: 28px;
     }
@@ -384,9 +381,8 @@ footer{
         font-size: 20px;
     }
 
-    /* Ajuste en la sección principal del cuerpo */
     .torneos {
-        width: 90%; /* Ajustar el ancho máximo del contenedor */
+        width: 90%; 
     }
 
     .titulo {
@@ -394,42 +390,40 @@ footer{
         margin-bottom: 30px;
     }
 
-    /* --- 2. Adaptación de la Sección 'Nuestra Historia' --- */
     .torneos-sobre-nosotros {
-        flex-direction: column; /* Apilar la imagen y el texto */
-        align-items: center; /* Centrar elementos */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .imagen-sobre-nosotros {
-        width: 90%; /* La imagen ocupa más ancho */
-        height: auto; /* Altura automática para mantener la proporción */
+        width: 90%; 
+        height: auto; 
         margin-bottom: 20px;
     }
     
     .contenidos-textos {
-        width: 90%; /* El texto ocupa más ancho */
+        width: 90%; 
         margin-left: 0;
     }
     
     .contenidos-textos p {
-        padding: 0; /* Eliminar padding extra */
-        text-align: left; /* Volver a alineación izquierda para el móvil */
+        padding: 0; 
+        text-align: left; 
     }
 
-    /* --- 3. Adaptación de la Sección 'Jugadores y Staff' --- */
     .galeria-jugadores {
-        justify-content: center; /* Centrar las imágenes */
+        justify-content: center; 
     }
     
     .imagen-jugadores {
-        width: 48%; /* Dos imágenes por fila para una mejor visualización */
+        width: 48%; 
         height: 250px;
         margin-bottom: 10px;
     }
     
     .hover-galeria p,
     .hover-galeria-white p {
-        font-size: 20px; /* Reducir el texto del hover */
+        font-size: 20px; 
     }
     
     .hover-galeria img,
@@ -437,34 +431,33 @@ footer{
         width: 100px;
     }
     
-    /* --- 4. Cumplir con el Requerimiento de 'ROL DE CADA UNO' (Una columna) --- */
     .cards {
-        flex-direction: column; /* Forzar el apilamiento de las tarjetas */
+        flex-direction: column; 
         gap: 15px;
     }
 
     .cards .card {
-        width: 100%; /* Ocupar todo el ancho disponible */
-        flex: 0 0 100%; /* Asegurar que ocupe todo el ancho */
-        height: auto; /* Permitir que la altura se ajuste al contenido */
-        flex-direction: column; /* Apilar imagen y texto dentro de la tarjeta */
+        width: 100%; 
+        flex: 0 0 100%; 
+        height: auto; 
+        flex-direction: column; 
         text-align: center;
         padding: 20px 10px;
     }
 
     .cards .card img {
-        width: 100px; /* Reducir tamaño de la imagen del jugador */
+        width: 100px; 
         height: 100px;
         margin-bottom: 15px;
     }
 
     .cards .card > .contenido-texto-card {
-        width: 90%; /* Ajustar ancho del texto */
+        width: 90%; 
         text-align: center;
     }
     
     .cards .card > .contenido-texto-card h4 {
-        width: 100%; /* Ajustar ancho del título */
+        width: 100%; 
         font-size: 20px;
         margin-bottom: 5px;
     }
@@ -473,23 +466,21 @@ footer{
         padding: 0;
     }
 
-    /* --- 5. Adaptación de la Sección 'Logros del Equipo' --- */
     .logrado {
-        flex-direction: column; /* Apilar los logros */
+        flex-direction: column; 
     }
 
     .tipos-logros {
-        width: 90%; /* Ocupar más ancho en móvil */
-        margin-bottom: 30px; /* Separación entre logros */
+        width: 90%; 
+        margin-bottom: 30px; 
     }
     
-    /* --- 6. Adaptación del Footer --- */
     footer {
         padding: 30px 0 15px 0;
     }
     
     .contacto {
-        flex-direction: column; /* Apilar los elementos de contacto */
+        flex-direction: column; 
         width: 95%;
     }
 
