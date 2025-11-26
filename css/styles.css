@@ -97,7 +97,6 @@ main .sobre-nosotros{
 
 .torneos-sobre-nosotros{
     display: flex;
-    justify-content: space-evenly;
     background-color: #FAFAF7;
 }
 
